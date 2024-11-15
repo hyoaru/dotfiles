@@ -4,17 +4,16 @@ return {
     local null_ls = require("null-ls")
     null_ls.setup({
       sources = {
-        -- Lua
         null_ls.builtins.formatting.stylua,
-        -- Ruby
         null_ls.builtins.diagnostics.rubocop,
         null_ls.builtins.formatting.rubocop,
-        -- JS/TS
-        null_ls.builtins.diagnostics.eslint,
+        --null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.formatting.prettier,
       },
     })
 
+    vim.cmd("set softtabstop=2")
+    vim.cmd("set shiftwidth=2")
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
   end,
 }
