@@ -10,9 +10,6 @@ return {
           hop = true,
           telescope = false,
         },
-        highlight_overrides = {
-          Comment = { bg = "#ff0000" }
-        }
       })
     end
   }
