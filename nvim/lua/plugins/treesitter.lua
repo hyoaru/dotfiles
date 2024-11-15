@@ -1,5 +1,6 @@
 return {
-  "nvim-treesitter/nvim-treesitter", 
+  "nvim-treesitter/nvim-treesitter",
+  lazy = false,
   build = ":TSUpdate",
   config = function()
     local configs = require("nvim-treesitter.configs")
@@ -9,9 +10,9 @@ return {
       indent = { enable = true },
       pickers = {
         colorscheme = {
-          enable_preview = true
-        }
-      }
+          enable_preview = true,
+        },
+      },
     })
-  end
+  end,
 }
