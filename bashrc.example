@@ -1,0 +1,7 @@
+# -- Neovim
+export NVIM_ENTRY=~/dotfiles/nvim/init.lua
+alias nvim="nvim -u $NVIM_ENTRY"
+
+# -- Tmux
+export TMUX_ENTRY=~/dotfiles/tmux.conf
+alias tmux="tmux -f $TMUX_CONF"
