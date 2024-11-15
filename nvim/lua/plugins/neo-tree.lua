@@ -7,6 +7,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function()
+    -- Keymaps for manual control of NeoTree
     vim.keymap.set('n', '<C-n>b', ":Neotree toggle <CR>", { noremap = true, silent = true })
     vim.keymap.set('n', '<C-n>', ":Neotree filesystem reveal left <CR>", { noremap = true, silent = true })
     vim.keymap.set('n', '<C-n>f', function()
@@ -14,6 +15,18 @@ return {
       vim.opt.relativenumber = true
     end, { noremap = true, silent = true })
 
+    -- Auto show NeoTree upon startup and focus on the main panel
+    vim.api.nvim_create_autocmd("VimEnter", {
+      pattern = "*",
+      callback = function()
+        -- Reveal NeoTree
+        vim.cmd(":Neotree filesystem reveal left")
+        -- Focus on the main panel (the first window in the current session)
+        vim.cmd("wincmd p")  -- Switch to the last accessed window
+      end,
+    })
+
+    -- Auto set relative number in NeoTree buffer
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "neo-tree",
       callback = function()
@@ -21,11 +34,12 @@ return {
       end,
     })
 
+    -- NeoTree setup
     require("neo-tree").setup({
       close_if_last_window = true,
       popup_border_style = "rounded",
       window = {
-        width = 30,
+        width = 40,
         mapping = {
           ["<CR>"] = "open",
         },
@@ -39,6 +53,7 @@ return {
           enabled = true,
         },
         group_empty_dirs = true,
+        use_cwd = false,
       },
       event_handlers = {
         {
@@ -49,6 +64,5 @@ return {
         },
       },
     })
-
   end
 }

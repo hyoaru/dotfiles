@@ -1,6 +1,3 @@
--- Set the correct runtime path for the dotfiles directory
-vim.opt.runtimepath:prepend(vim.fn.expand("~/dotfiles/nvim"))
-
 -- Lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -25,4 +22,4 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 -- Set the colorscheme
-vim.cmd.colorscheme "default"
+vim.cmd.colorscheme "fullerene"

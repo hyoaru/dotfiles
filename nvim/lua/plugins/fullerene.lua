@@ -1,0 +1,3 @@
+return {
+  {"steguiosaur/fullerene.nvim"}
+}
