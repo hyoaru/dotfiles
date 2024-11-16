@@ -20,6 +20,19 @@ return {
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       local lspconfig = require("lspconfig")
+
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.ruby_lsp.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.emmet_language_server.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
       lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
