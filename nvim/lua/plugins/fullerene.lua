@@ -11,6 +11,6 @@ return {
           telescope = false,
         },
       })
-    end
-  }
+    end,
+  },
 }
