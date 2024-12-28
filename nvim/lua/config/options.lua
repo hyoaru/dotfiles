@@ -5,7 +5,7 @@
 local opt = vim.opt
 opt.wrap = false
 
-vim.o.tabstop = 2
-vim.o.expandtab = true
-vim.o.softtabstop = 2
-vim.o.shiftwidth = 2
+opt.tabstop = 2
+opt.expandtab = true
+opt.softtabstop = 2
+opt.shiftwidth = 2
