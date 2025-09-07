@@ -77,7 +77,7 @@ return {
       inlay_hints = { enabled = false },
       servers = {
         tailwindcss = {},
-        ruby_lsp = {},
+        -- ruby_lsp = {},
         emmet_language_server = {},
         html = {},
         tsserver = {},
