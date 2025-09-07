@@ -1,6 +1,7 @@
 * {
   font-family: "SF Pro Text", sans-serif;
   font-size: 13px;
+  font-weight: bold;
 }
 
 window#waybar {
