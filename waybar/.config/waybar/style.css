@@ -1,0 +1,55 @@
+* {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#workspaces button,
+#workspaces button * {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 4px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+  background-color: transparent;
+  padding: 0px 10px 0px 10px;
+  color: #ffffff;
+  margin: 0 4px;
+  border-radius: 10px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}

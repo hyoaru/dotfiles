@@ -1,0 +1,75 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 0,
+  "margin-top": 10,
+  "margin-bottom": 0,
+  "margin-right": 10,
+  "margin-left": 10,
+  "modules-left": ["custom/media", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "network",
+    "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "keyboard-state",
+    "battery",
+    "pulseaudio",
+    "clock",
+  ],
+  "hyprland/window": {
+    "format": "●  {title}",
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "•",
+      "active": "●",
+    },
+    "persistent-workspaces": {
+      "*": 4,
+    },
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": true,
+  },
+  "memory": {
+    "format": "  {}%",
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+  "network": {
+    "format-wifi": "   {essid}",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected",
+    "format-alt": "   {ifname}: {ipaddr}/{cidr}",
+  },
+  "pulseaudio": {
+    "format": "  ",
+    "on-click": "pavucontrol",
+  },
+}
