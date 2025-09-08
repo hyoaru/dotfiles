@@ -17,7 +17,7 @@ source "$OSH/oh-my-bash.sh"
 # fzf integration
 eval "$(fzf --bash)"
 export FZF_DEFAULT_OPTS="--height=100%"
-export FZF_CTRL_T_COMMAND="rg --files --hidden --no-ignore --glob '!.git' --glob '!.svn' --glob '!.hg'"
+export FZF_CTRL_T_COMMAND="fd --type f --hidden --no-ignore --exclude '.git'"
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always {}'"
 export FZF_ALT_C_COMMAND="fd --hidden --type d"
 
