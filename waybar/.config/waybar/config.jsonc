@@ -11,8 +11,8 @@
   "modules-left": ["custom/media", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "network",
     "power-profiles-daemon",
+    "network",
     "cpu",
     "memory",
     "keyboard-state",
@@ -34,11 +34,11 @@
     },
   },
   "cpu": {
-    "format": "  {usage}%",
+    "format": "    {usage}%",
     "tooltip": true,
   },
   "memory": {
-    "format": "  {}%",
+    "format": "    {}%",
   },
   "battery": {
     "states": {
@@ -46,7 +46,7 @@
       "warning": 30,
       "critical": 15,
     },
-    "format": "{icon}  {capacity}%",
+    "format": "{icon}    {capacity}%",
     "format-icons": ["", "", "", "", ""],
   },
   "power-profiles-daemon": {
@@ -61,7 +61,7 @@
     },
   },
   "network": {
-    "format-wifi": "   {essid}",
+    "format-wifi": "     {essid}",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
