@@ -1,0 +1,68 @@
+* {
+    background: rgba(26, 26, 26, 0.95);
+    foreground: #fff;
+    neutral: rgba(89, 89, 89, 0.67);
+}
+
+window {
+    padding: 14px;
+    background-color: var(background);
+    border: 1px;
+    border-color: var(neutral);
+    border-radius: 10px;
+    width: 24%;
+    height: 26.5%;
+}
+
+mainbox {
+    background-color: transparent;
+    children: ["inputbar", "listview"];
+}
+
+inputbar {
+    background-color: transparent;
+    children: ["entry"];
+}
+
+listview {
+    background-color: transparent;
+}
+
+entry {
+    border: 2px;
+    border-color: var(neutral);
+    background-color: transparent;
+    padding: 14px ;
+    border-radius: 8px;
+    text-color: var(foreground);
+    cursor: text;
+    spacing: 0;
+    margin: 0 0 6px 0;
+    placeholder: "Type to filter";
+}
+
+element {
+    padding: 8px;
+    background-color: transparent;
+    cursor:  pointer;
+    spacing: 5px ;
+    border-radius: 8px;
+}
+
+element-text {
+    text-color: var(foreground);
+    background-color: transparent;
+    cursor: inherit;
+    highlight: inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 1.0000em ;
+    cursor: inherit;
+    text-color: inherit;
+}
+
+element selected.normal {
+    background-color: var(neutral);
+}

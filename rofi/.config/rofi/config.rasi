@@ -1,0 +1,14 @@
+@theme "~/.config/rofi/themes/main.rasi"
+
+configuration {
+  modi: "drun,run,window";
+  font: "Noto Sans 10";
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  drun-display-format: "{icon} {name}";
+  matching: "glob";
+  location: 0;
+  terminal: "kitty";
+  ssh-client: "ssh";
+  parse-hosts: true;
+}
