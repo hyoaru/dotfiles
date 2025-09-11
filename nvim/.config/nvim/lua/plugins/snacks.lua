@@ -1,6 +1,12 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    picker = {
+      hidden = true,
+      ignored = false,
+      follow = true,
+      supports_live = true,
+    },
     dashboard = {
       preset = {
         header = [[
