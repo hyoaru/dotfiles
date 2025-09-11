@@ -22,12 +22,7 @@ return {
     priority = 1000,
   },
   { "datsfilipe/vesper.nvim" },
-  {
-    "bettervim/yugen.nvim",
-    config = function()
-      vim.cmd.colorscheme("yugen")
-    end,
-  },
+  { "bettervim/yugen.nvim" },
   {
     "killitar/obscure.nvim",
     lazy = false,

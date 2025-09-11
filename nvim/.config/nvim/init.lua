@@ -2,4 +2,4 @@
 require("config.lazy")
 
 -- Set the colorscheme
-vim.cmd.colorscheme("fullerene")
+vim.cmd.colorscheme("yugen")
