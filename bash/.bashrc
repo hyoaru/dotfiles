@@ -24,3 +24,9 @@ export FZF_ALT_C_COMMAND="fd --hidden --type d"
 # bat integration
 alias cat='bat --paging=never'
 alias cat.real='/bin/cat'
+
+# eza integration
+alias ls="eza --icons"
+alias ll="eza -l --icons"
+alias la="eza -la --icons"
+alias lt="eza --tree --icons"
