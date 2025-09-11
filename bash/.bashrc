@@ -14,19 +14,22 @@ plugins=(git bashmarks)
 # Load Oh-My-Bash
 source "$OSH/oh-my-bash.sh"
 
-# fzf integration
+# Fzf integration
 eval "$(fzf --bash)"
 export FZF_DEFAULT_OPTS="--height=100%"
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --no-ignore --exclude '.git'"
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always {}'"
 export FZF_ALT_C_COMMAND="fd --hidden --type d"
 
-# bat integration
+# Bat integration
 alias cat='bat --paging=never'
 alias cat.real='/bin/cat'
 
-# eza integration
+# Eza integration
 alias ls="eza --icons"
 alias ll="eza -l --icons"
 alias la="eza -la --icons"
 alias lt="eza --tree --icons"
+
+# Convenience scripts
+alias rip="grep '\[ALPM\] installed' /var/log/pacman.log | tail -n 20"
