@@ -33,3 +33,6 @@ alias lt="eza --tree --icons"
 
 # Convenience scripts
 alias rip="grep '\[ALPM\] installed' /var/log/pacman.log | tail -n 20"
+
+# Path to Go binary
+export PATH=$PATH:/usr/local/go/bin
