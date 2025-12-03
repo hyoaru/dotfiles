@@ -3,7 +3,7 @@
 
 # Path to Oh-My-Bash
 export OSH="$HOME/.oh-my-bash"
-OSH_THEME="font"
+OSH_THEME="tonotdo"
 OMB_USE_SUDO=true
 
 # Completions, aliases, and plugins
