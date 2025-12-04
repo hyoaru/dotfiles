@@ -36,3 +36,12 @@ alias rip="grep '\[ALPM\] installed' /var/log/pacman.log | tail -n 20"
 
 # Path to Go binary
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# Path to node binary
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Github flavored markdown preview integration
+alias mdp="gh-gfm-preview -l"
