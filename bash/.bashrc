@@ -22,7 +22,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always {}'"
 export FZF_ALT_C_COMMAND="fd --hidden --type d"
 
 # Bat integration
-alias cat='bat --paging=never'
+alias cat='bat'
 alias cat.real='/bin/cat'
 
 # Eza integration
