@@ -11,6 +11,7 @@
   "modules-left": ["custom/media", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "idle_inhibitor",
     "power-profiles-daemon",
     "network",
     "cpu",
@@ -20,6 +21,17 @@
     "pulseaudio",
     "clock",
   ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": "",
+    },
+    "tooltip": true,
+    "tooltip-format-activated": "Idle Inhibitor: ON (Screen will not sleep)",
+    "tooltip-format-deactivated": "Idle Inhibitor: OFF (Screen will sleep)",
+    "on-click": "toggle",
+  },
   "hyprland/window": {
     "format": "●  {title}",
   },

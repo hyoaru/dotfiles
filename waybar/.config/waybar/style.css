@@ -45,6 +45,10 @@ window#waybar {
   border-radius: 10px;
 }
 
+#idle_inhibitor, #power-profiles-daemon {
+  padding: 3px 10px 0px 10px;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
