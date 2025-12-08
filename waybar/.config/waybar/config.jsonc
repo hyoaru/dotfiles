@@ -33,7 +33,7 @@
     "on-click": "toggle",
   },
   "hyprland/window": {
-    "format": "●  {title}",
+    "format": " ●  {title}",
   },
   "hyprland/workspaces": {
     "format": "{icon}",
