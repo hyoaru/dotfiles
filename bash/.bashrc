@@ -26,10 +26,10 @@ alias cat='bat'
 alias cat.real='/bin/cat'
 
 # Eza integration
-alias ls="eza --icons"
-alias ll="eza -l --icons"
-alias la="eza -la --icons"
-alias lt="eza --tree --icons"
+alias ls="eza --icons auto"
+alias ll="eza -l --icons auto"
+alias la="eza -la --icons auto"
+alias lt="eza --tree --icons auto"
 
 # Convenience scripts
 alias rip="grep '\[ALPM\] installed' /var/log/pacman.log | tail -n 20"
