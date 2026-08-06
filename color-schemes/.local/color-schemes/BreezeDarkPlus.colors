@@ -1,0 +1,99 @@
+# SPDX-FileCopyrightText: Andrew Lake <jamboarder@gmail.com>
+# SPDX-FileCopyrightText: Marco Martin <notmart@gmail.com>
+# SPDX-FileCopyrightText: Nate Graham <nate@kde.org>
+# SPDX-FileCopyrightText: Noah Davis <noahadvs@gmail.com>
+# SPDX-FileCopyrightText: Neal Gompa <ngompa@kde.org>
+# SPDX-FileCopyrightText: David Redondo <kde@david-redondo.de>
+# SPDX-FileCopyrightText: Thomas Duckworth <tduck973564@gmail.com>
+# SPDX-FileCopyrightText: Shashank Shekhar Pandey <shashankspis20@gmail.com>
+# SPDX-License-Identifier: LGPL-2.0-or-later
+
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=30,30,30
+BackgroundNormal=35,38,41
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNormal=252,252,252
+
+[Colors:Complementary]
+BackgroundAlternate=15,15,15
+BackgroundNormal=10,10,10
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundNormal=252,252,252
+
+[Colors:Header]
+BackgroundAlternate=20,20,20
+BackgroundNormal=30,30,30
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundNormal=252,252,252
+
+[Colors:Selection]
+BackgroundAlternate=30,87,116
+BackgroundNormal=61,174,233
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=252,252,252
+ForegroundNormal=252,252,252
+
+[Colors:Tooltip]
+BackgroundAlternate=20,20,20
+BackgroundNormal=15,15,15
+ForegroundNormal=252,252,252
+
+[Colors:View]
+BackgroundAlternate=20,20,20
+BackgroundNormal=12,12,12
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundLink=29,153,243
+ForegroundNormal=252,252,252
+
+[Colors:Window]
+BackgroundAlternate=25,25,25
+BackgroundNormal=20,20,20
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundNormal=252,252,252
+
+[General]
+ColorScheme=BreezeDarkPlus
+Name=Breeze Dark Plus
+shadeSortColumn=true
+
+[KDE]
+contrast=4
+
+[WM]
+activeBackground=15,15,15
+activeForeground=252,252,252
+inactiveBackground=30,30,30
+inactiveForeground=161,169,177
