@@ -10,7 +10,7 @@ sudo pacman -S --needed ohmybash bat fzf eza less fastfetch
 
 # Desktop Environment
 echo "Installing desktop envirnonment packages..."
-sudo pacman -S --needed hypridle hyprpaper hyprlock hyprpicker grimblast sddm swaync adwaita-dark brightnessctl
+sudo pacman -S --needed hypridle hyprpaper hyprlock hyprpicker grimblast sddm swaync adwaita-dark brightnessctl gwenview qt6ct breeze breeze-icons
 
 # Development Environment
 echo "Installing development environment packages..."
