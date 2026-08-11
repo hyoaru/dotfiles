@@ -46,5 +46,8 @@ export NVM_DIR="$HOME/.config/nvm"
 # Github flavored markdown preview integration
 alias mdp="gh-gfm-preview -l"
 
-# opencode
-export PATH=/home/jiji/.opencode/bin:$PATH
+# Opencode
+export PATH=~/.opencode/bin:$PATH
+
+# AWS
+export PATH=~/.local/bin:$PATH
