@@ -6,7 +6,7 @@ sudo pacman -S --needed git stow
 
 # Terminal Enhancements
 echo "Installing terminal enhancement packages..."
-sudo pacman -S --needed ohmybash bat fzf eza less fastfetch
+sudo pacman -S --needed ohmybash bat fzf eza less fastfetch fd
 
 # Desktop Environment
 echo "Installing desktop envirnonment packages..."
