@@ -4,7 +4,7 @@ rm -Rf ~/.config/hypr/./*
 
 # Symlinks
 echo "Stowing configurations..."
-stow bash hypr kitty nvim rofi tmux waybar system qt6ct kdeglobals color-schemes
+stow bash hypr kitty nvim rofi tmux waybar system qt6ct kdeglobals color-schemes zathura
 
 # Desktop Environment
 echo "Applying desktop environment configurations..."
