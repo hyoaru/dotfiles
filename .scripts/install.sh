@@ -16,6 +16,7 @@ sudo pacman -S --needed \
   hyprpaper \
   hyprlock \
   hyprpicker \
+  hyprsunset \
   grimblast \
   sddm \
   swaync \
