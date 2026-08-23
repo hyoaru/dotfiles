@@ -51,3 +51,9 @@ export PATH=~/.opencode/bin:$PATH
 
 # AWS
 export PATH=~/.local/bin:$PATH
+
+# Zathura
+zathura() {
+  command zathura "$@" >/dev/null 2>&1 &
+  disown
+}
