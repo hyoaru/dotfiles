@@ -3,7 +3,7 @@
 # Essentials
 echo "Installing essential packages..."
 sudo pacman -S --needed base-devel git stow
-git clone https://aur.archlinux.org/paru.git && cd paru && makepgk -si && cd ../ && rm -Rf paru
+git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd ../ && rm -Rf paru
 
 # Terminal Enhancements
 echo "Installing terminal enhancement packages..."
@@ -27,8 +27,17 @@ sudo pacman -S --needed \
   breeze-icons \
   zathura \
   zathura-pdf-mupdf \
-  okular
+  okular \
+  gnome-keyring
+
+paru -S grimblast
 
 # Development Environment
 echo "Installing development environment packages..."
-sudo pacman -S --needed neovim luarocks lua lua51 tree-sitter-cli
+sudo pacman -S --needed neovim luarocks lua lua51 tree-sitter-cli aws-vault
+
+sudo pacman -S docker docker-compose
+sudo systemctl enable --now docker.service
+sudo usermod -aG docker $USER
+
+paru -S bruno-bin
