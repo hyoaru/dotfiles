@@ -2,7 +2,7 @@
 
 # Essentials
 echo "Installing essential packages..."
-sudo pacman -S --needed base-devel git stow
+sudo pacman -S --needed base-devel git stow tree
 git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd ../ && rm -Rf paru
 
 # Terminal Enhancements
