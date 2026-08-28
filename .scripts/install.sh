@@ -30,9 +30,13 @@ sudo pacman -S --needed \
   zathura-pdf-mupdf \
   okular \
   gnome-keyring \
-  distrobox
+  distrobox \
+  kdeconnect \
+  libimobiledevice \ 
+ifuse \ 
+usbmuxd
 
-paru -S grimblast
+paru -S grimblast kde-connect-fix-git
 
 # Development Environment
 echo "Installing development environment packages..."
