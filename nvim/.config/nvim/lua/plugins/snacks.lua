@@ -6,6 +6,20 @@ return {
       ignored = false,
       follow = true,
       supports_live = true,
+      sources = {
+        git_diff = {
+          layout = {
+            preset = "bottom",
+            layout = {
+              box = "vertical",
+              height = 0.9,
+              { win = "preview", height = 0.8 },
+              { win = "input", height = 1, border = "rounded" },
+              { win = "list" },
+            },
+          },
+        },
+      },
     },
     dashboard = {
       preset = {
