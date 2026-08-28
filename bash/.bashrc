@@ -57,3 +57,8 @@ zathura() {
   command zathura "$@" >/dev/null 2>&1 &
   disown
 }
+
+# Distrobox
+distrobox() {
+  command distrobox "$@" -- bash --noprofile --norc
+}

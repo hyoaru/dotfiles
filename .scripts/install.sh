@@ -29,7 +29,8 @@ sudo pacman -S --needed \
   zathura \
   zathura-pdf-mupdf \
   okular \
-  gnome-keyring
+  gnome-keyring \
+  distrobox
 
 paru -S grimblast
 
