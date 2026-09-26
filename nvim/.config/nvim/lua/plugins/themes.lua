@@ -14,7 +14,6 @@ return {
       })
     end,
   },
-  { "nyoom-engineering/oxocarbon.nvim" },
   { "EdenEast/nightfox.nvim" },
   {
     "scottmckendry/cyberdream.nvim",
