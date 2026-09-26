@@ -52,9 +52,25 @@ export PATH=~/.opencode/bin:$PATH
 # AWS
 export PATH=~/.local/bin:$PATH
 
+# Gwenview
+image() {
+  if [ $# -ne 1 ]; then
+    echo "Usage: image <image.file>"
+    return 1
+  fi
+
+  gwenview "$1" >/dev/null 2>&1 &
+  disown
+}
+
 # Zathura
-zathura() {
-  command zathura "$@" >/dev/null 2>&1 &
+pdf() {
+  if [ $# -ne 1 ]; then
+    echo "Usage: pdf <file.pdf>"
+    return 1
+  fi
+
+  zathura "$1" >/dev/null 2>&1 &
   disown
 }
 
