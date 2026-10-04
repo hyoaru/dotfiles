@@ -63,7 +63,9 @@ hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("hyprctl hyprsunset identity"
 -- Monitor scaling
 hl.bind(
 	"SUPER + grave",
-	hl.dsp.exec_cmd([[hyprctl eval 'hl.monitor({ output = "", mode = "preferred", position = "auto", scale = 1.2 })']])
+	hl.dsp.exec_cmd(
+		[[hyprctl eval 'hl.monitor({ output = "eDP-1", mode = "preferred", position = "0x0", scale = 1.2 })']]
+	)
 )
 
 -- Screenshots
