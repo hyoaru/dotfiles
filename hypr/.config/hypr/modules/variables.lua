@@ -25,6 +25,7 @@ hl.config({
 		splash_font_family = "Noto Sans",
 		disable_hyprland_logo = true,
 		focus_on_activate = true,
+		vrr = 2,
 	},
 })
 
