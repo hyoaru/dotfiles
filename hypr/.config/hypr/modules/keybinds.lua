@@ -14,6 +14,7 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(d.colorPicker))
 hl.bind(mainMod .. " + N", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd(d.lock))
+hl.bind(mainMod .. " + SHIFT + ESCAPE", hl.dsp.exec_cmd("systemctl suspend"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("pkill -i waybar; pkill -x hyprpaper; hyprctl reload; hyprpaper & waybar"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pin())
 
