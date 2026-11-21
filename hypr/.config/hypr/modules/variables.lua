@@ -34,3 +34,9 @@ hl.config({
 		preserve_split = true,
 	},
 })
+
+hl.config({
+	render = {
+		cm_auto_hdr = 0,
+	},
+})
